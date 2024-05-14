@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+#div__membros{
+    background-color: burlywood;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+ 
+}
+.card{
+    background-color: #303030;
+    color: white;
+    max-width: 200px;
+    min-height: 100px;
+    margin: 10px;
+    padding: 0 10px 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.avatar{
+    margin-bottom: 10px;
+}
+.cabecalho__card{
+    background-color: #1f1e1e;
+    width: 50%;
+    height: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
