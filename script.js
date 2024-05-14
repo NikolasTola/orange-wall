@@ -32,6 +32,18 @@ const criaCards = async () => {
             default:
                 break;
         }
+
+        const imagem = document.createElement('img');
+        imagem.classList.add('imagem__perfil');
+
+        switch (nome) {
+            case 'Dolly':
+                imagem.src = '0';
+                break;
+        
+            default:
+                break;
+        }
         const avatar = document.createElement('img');
         avatar.src = linkAvatar;
         avatar.classList.add('avatar');
