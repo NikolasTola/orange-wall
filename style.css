@@ -14,17 +14,19 @@
  
 }
 .card{
-    background-color: #303030;
-    color: white;
-    max-width: 200px;
+    background-color: #e6e6e6;
+    color: #303030;
+    width: 250px;
     min-height: 100px;
+    height: max-content;
     margin: 10px;
     padding: 0 10px 10px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -38,5 +40,26 @@
     width: 50%;
     height: 10px;
     border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+.imagem__perfil{
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+.nick{
+    color: #303030;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+.nick:hover{
+    color: gray;
+}
+.nick:active{
+    color: rgb(82, 82, 82);
+}
+.nome{
     margin-bottom: 10px;
 }

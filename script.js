@@ -27,31 +27,48 @@ const criaCards = async () => {
                 status = 'Jogando';
                 break
             case 3:
-                status = 'Ocupado';
+                status = 'Ausente';
                 break
             default:
                 break;
         }
 
-        const imagem = document.createElement('img');
-        imagem.classList.add('imagem__perfil');
+        const imagemPerfil = document.createElement('img');
+        imagemPerfil.classList.add('imagem__perfil');
 
         switch (nome) {
             case 'Dolly':
-                imagem.src = '0';
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/dolly_perfil.png';
                 break;
-        
+            case 'Brandão':
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/brands_perfil.png';
+                break;
+            case 'Nikolas':
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/nikolas_perfil.png';
+                break;
+            case 'Osmar':
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/osmar_perfil.png';
+                break;
+            case 'Pedro':
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/pedro_perfil.png';
+                break;
+            case 'Rúbia':
+                imagemPerfil.src = 'https://raw.githubusercontent.com/NikolasTola/orange-wall/main/imagens/avatar/rubia_perfil.png';
+                break;             
             default:
                 break;
         }
+
         const avatar = document.createElement('img');
         avatar.src = linkAvatar;
         avatar.classList.add('avatar');
 
         const nomeOW = document.createElement('h1');
+        nomeOW.classList.add('nome');
         nomeOW.innerHTML = nome;
 
         const nickSteam = document.createElement('a');
+        nickSteam.classList.add('nick');
         nickSteam.innerHTML = nomeSteam;
         nickSteam.href = linkSteam;
 
@@ -61,6 +78,24 @@ const criaCards = async () => {
             statusAtual.title = nomeJogo;
         }
 
+        switch (status) {
+            case 'Online':
+                statusAtual.setAttribute('style', 'color: green');
+                break;
+            case 'Offline':
+                statusAtual.setAttribute('style', 'color: gray');
+                break;
+            case 'Ausente':
+                statusAtual.setAttribute('style', 'color: red');
+                break;
+            case 'Jogando':
+                statusAtual.setAttribute('style', 'color: yellow; cursor: pointer');
+                break;
+                    
+            default:
+                break;
+        }
+
         const cabecalho = document.createElement('div');
         cabecalho.classList.add('cabecalho__card');
 
@@ -68,6 +103,7 @@ const criaCards = async () => {
         card.classList.add('card');
 
         card.appendChild(cabecalho);
+        card.appendChild(imagemPerfil);
         card.appendChild(avatar);
         card.appendChild(nomeOW);
         card.appendChild(nickSteam);
