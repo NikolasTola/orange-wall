@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagens/icones/iconeOW.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="style.css">
     <title>Orange Wall</title>
 </head>
 <body>
+    <nav id="menuLateral">
+        <ul id="opcoes__menuLateral">
+            <a href="jogos.html">
+                <li class="opcao_menuLateral">
+                    <span class="material-symbols-outlined icone__menuLateral">stadia_controller</span>
+                    <h4 class="nome__menuLateral">JOGOS</h4>
+                </li>
+            </a>
+           <li class="opcao_menuLateral">
+                <span class="material-symbols-outlined icone__menuLateral">groups</span>
+                <h4 class="nome__menuLateral">MEMBROS</h4>
+            </li>
+            <li class="opcao_menuLateral">
+                <span class="material-symbols-outlined icone__menuLateral">info</span>
+                <h4 class="nome__menuLateral">SOBRE</h4>
+            </li>
+            <li class="opcao_menuLateral">
+                <span class="material-symbols-outlined icone__menuLateral">warning</span>
+                <h4 class="nome__menuLateral">OPÇÃO 4</h4>
+            </li>
+            <li id="opcao__botaoDarkMode">
+                <div>
+                    <input type="checkbox" id="checkbox__botaoDarkMode">
+                    <label id="botao__darkMode" for="checkbox__botaoDarkMode">
+                        
+                        <span id="icone__lua" class="material-symbols-outlined">dark_mode</span>
+                        <span id="icone__sol" class="material-symbols-outlined">light_mode</span>
+                        <div id="bola__botaoDarkMode"></div>
+                    </label>  
+                </div>
+            </li>
+        </ul>
+        
+              
+    
+    </nav>
     <div id="div__membros"></div>
+            
     <script src="conexaoAPI.js"></script>
     <script src="script.js"></script>
+    <script src="darkMode.js"></script>
 </body>
 </html>
