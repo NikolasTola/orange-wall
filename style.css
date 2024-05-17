@@ -1,4 +1,5 @@
 .light-mode:root{
+
     --bg-card: #e6e6e6;
     --bg-nome: #c1c1c1;
     --letras-card: #303030;
@@ -8,7 +9,7 @@
 
 }
 :root{
-    --bg-card: #303030;
+    --bg-card: red;/*#303030;*/
     --bg-nome: #4e4e4e;
     --letras-card: #e6e6e6;
 
