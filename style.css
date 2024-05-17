@@ -9,11 +9,11 @@
 
 }
 :root{
-    --bg-card: red;/*#303030;*/
+    --bg-card: #303030;
     --bg-nome: #4e4e4e;
     --letras-card: #e6e6e6;
 
-    --bg-menu-lateral: red/*#082b49*/;
+    --bg-menu-lateral: #082b49;
     --background-color: #424242;
 }
 
